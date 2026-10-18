@@ -1,0 +1,20 @@
+{
+  "cleaning": {
+    "empty": 0,
+    "duplicate": 26,
+    "short_summary": 0
+  },
+  "sizes": {
+    "train": 15118,
+    "validation": 1927,
+    "test": 1878
+  },
+  "length": {
+    "n": 18923,
+    "p50": 1167,
+    "p90": 2081,
+    "p99": 2569,
+    "max": 3055,
+    "unit": "words"
+  }
+}

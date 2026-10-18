@@ -1,0 +1,9 @@
+# Optional neural components. NOT exercised by the authoring sandbox (no GPU / no model downloads).
+# Install PyTorch first, following https://pytorch.org/get-started/locally/ for your OS/GPU.
+transformers
+datasets
+accelerate
+sentence-transformers   # dense embeddings + optional cross-encoder reranker / NLI verifier
+peft                    # optional LoRA fine-tuning (--lora)
+bert-score              # optional BERTScore in evaluation/metrics.py
+evaluate

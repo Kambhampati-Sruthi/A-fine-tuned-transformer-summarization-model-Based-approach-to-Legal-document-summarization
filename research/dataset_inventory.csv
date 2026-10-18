@@ -1,0 +1,9 @@
+resource,url,content,use_in_project,licence_status,caution
+CUAD,https://www.atticusprojectai.org/cuad/,510 commercial contracts / 41 clause categories (expert annotated),clause-detection eval; retrieval gold spans,VERIFY before use (believed CC BY 4.0),Not paired summaries; do not treat clause labels as reference summaries
+BillSum,https://huggingface.co/datasets/FiscalNote/billsum,US legislation + summaries,smoke-test of training pipeline only,VERIFY,Legislation != commercial contracts
+LegalBench,https://github.com/HazyResearch/legalbench,legal reasoning tasks (contract tasks included),select contract tasks for QA eval,VERIFY per-task licence,Not a summarisation corpus
+LegalBench-RAG,https://arxiv.org/abs/2408.10343,6858 query-answer pairs with exact text spans over ContractNLI/CUAD/MAUD/PrivacyQA,retrieval benchmark (precision of snippets),VERIFY,Derived from other datasets - inherits their licences
+ContractNLI,https://arxiv.org/abs/2110.01799,NLI over NDAs (spans + entail/contradict),train/eval the claim verifier,VERIFY,NDA-only
+LEDGAR / LexGLUE,https://arxiv.org/abs/2110.00976,Contract-provision classification,fine-tune a clause classifier to replace rules,VERIFY,Classification not summarisation
+Multi-LexSum,https://arxiv.org/abs/2206.10883,Civil-rights litigation docs with multi-length expert summaries,long legal summarisation fine-tuning (closest paired corpus),VERIFY,Litigation documents not contracts - state this limitation
+Synthetic (this repo),backend/app/evaluation/synthetic.py,template contracts + gold facts/QA,unit/integration tests and harness checks,own,NEVER report as real-world accuracy
