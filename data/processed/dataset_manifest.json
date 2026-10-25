@@ -1,0 +1,11 @@
+{
+  "dataset": "Supplementary short legal/policy excerpt summarization",
+  "candidate_rows_before_conflict_review": 341,
+  "rows_excluded_for_conflicting_duplicate_sources": 2,
+  "rows_after_exclusion": 339,
+  "train_rows": 196,
+  "validation_rows": 68,
+  "test_rows": 75,
+  "group_leakage_check": "passed",
+  "note": "Not a full commercial-contract summarization dataset. Review reference-summary quality and dataset licensing."
+}

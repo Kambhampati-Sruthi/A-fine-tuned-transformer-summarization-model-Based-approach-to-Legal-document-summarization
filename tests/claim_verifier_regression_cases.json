@@ -1,0 +1,17 @@
+[
+  {
+    "claim": "The agreement is governed by New York law.",
+    "expected_status": "UNRESOLVED",
+    "expected_jurisdiction_conflict": true
+  },
+  {
+    "claim": "The advertising fee shall be 0.025% of the average Transaction.",
+    "expected_status": "SUPPORTED",
+    "expected_jurisdiction_conflict": false
+  },
+  {
+    "claim": "The advertising fee shall be 5% of the average Transaction.",
+    "expected_status": "UNRESOLVED",
+    "expected_jurisdiction_conflict": false
+  }
+]

@@ -1,0 +1,622 @@
+Advanced Robotics Using AI and IoT
+(Internship Report)
+An internship report submitted in partial fulfilment of the requirements of III B. Tech II Semester of
+BACHELOR OF TECHNOLOGY
+in
+ARTIFICIAL INTELLIGENCE AND DATA SCIENCE
+by 
+Kambhampati Sruthi
+23ME1A5430
+Under Supervision of
+Mr.K.Naresh Babu M.Tech(Ph.D.) 
+Associative Professor 
+Department of Artificial Intelligence and Data Science
+RAMACHANDRA COLLEGE OF ENGINEERING
+NH-16 Bypass Road, Vatluru(V), ELURU-534007, A.P.
+Approved by AICTE, New Delhi, Permanently Affiliated to JNTUK, KKD Recognised by UGC 2(f) & 12(b)
+Accredited by NAAC A+, NBA, ISO 9001 : 2015 Certified
+2026-27
+DEPARTMENT OF ARTIFICIAL INTELLIGENCE AND DATA SCIENCE
+CERTIFICATE
+This is to certify that the Internship Report entitled "Advanced Robotics Using AI and IoT" by Kambhampati Sruthi (23ME1A5430) is a bonafide record of work carried out by her, during the academic year 2025-2026 and is submitted during the academic year 2026 – 2027 in partial fulfilment of the requirements of VII Semester of Bachelor of Technology in Artificial Intelligence and Data Science. This report fulfils the requirement of the ordinance relating to the Internship Training. No part of this report has been published previously by any other university or institution for any purpose whatsoever.
+Mr.K.Naresh Babu Dr. P. Sudhakar 
+Associative Professor HOD
+DECLARATION BY THE STUDENT
+This is to certify that the present Internship Report entitled "Advanced Robotics Using AI and IoT" is my original work. This Internship Report fulfils the requirement of the VII Semester of Bachelor of Technology in Artificial Intelligence and Data Science degree of Jawaharlal Nehru Technological University, Kakinada. It does not form the basis for the award of any degree or diploma from any other university or institution.
+Kambhampati Sruthi
+23ME1A5430
+ACKNOWLEDGEMENT
+I would like to take this opportunity to express my deep gratitude to everyone who extended their cooperation in various ways during my internship. It is both my pleasure and responsibility to acknowledge the help of all those individuals.
+I would like to thank my faculty mentor, Mr. K. Naresh Babu, Assistant Professor, Department of Artificial Intelligence and Data Science, for giving me the opportunity and continuous guidance to complete this internship successfully.
+I am very grateful to Dr. P. Sudhakar , Head of the Department of Artificial Intelligence and Data Science, for his/her guidance and encouragement throughout my internship.
+I express my sincere gratitude to Dr. M. Muralidhara Rao Principal, RAMACHANDRA COLLEGE OF ENGINEERING, Eluru, for the valuable suggestions and support provided during the preparation of this report.
+I express my heartfelt gratitude to the Management of Ramachandra College of Engineering, Eluru, for their support and encouragement in completing my internship and for providing the necessary facilities.
+I sincerely thank all the faculty members and staff of the Department of Artificial Intelligence and Data Science for their valuable advice, suggestions, and constant encouragement, which played a vital role throughout my internship.
+I am also thankful to the EduSkills Foundation and AICTE for organizing this Virtual Internship Program and providing a structured, industry-relevant learning platform.
+Finally, I thank everyone who directly or indirectly helped me complete my internship successfully.
+Kambhampati Sruthi
+23ME1A5430
+Annexure – 1 Internship Request Letter & Registration Form
+From: Date: 
+Student’s Name: Kambhampati Sruthi
+Roll Number: 23ME1A5430
+Mobile Number and email ID: 8978791505 kambhampatisruthi@gmail.com
+To
+The Head of the Department
+Department of Artificial Intelligence and Data Science
+Ramachandra College of Engineering
+NH-16, Bypass Road, Vatluru (V), ELURU-534007
+Respected Sir/Madam,
+Subject: Request for Internship Approval and Registration – Reg.
+I,
+Student’s Name: Kambhampati Sruthi , a student of Artificial Intelligence and Data Science
+department, 7th semester, am writing to request approval for my mandatory internship as per the R20 Internship Policy. I have secured an opportunity to undertake an internship at Organization Name: EduSkills from to .
+The internship is will be conducted in ☐ Physical Mode ☐ Virtual Mode.
+The internship will involve Brief Description of the Work Assigned: 
+ . I kindly request you to approve my internship and allow me to proceed with the registration process. Attached below is my Internship Registration Form with the necessary details.
+Thank you for your time and consideration. Yours sincerely,
+Name and signature of the student
+ Internship Registration Form
+Department of Artificial Intelligence and Data Science
+Student Details:
+Name: Kambhampati Sruthi Roll Number: 23ME1A5430
+Semester: VI Section: A Contact Number:8978791505
+ Email ID: kambhampatisruthi@gmail.com
+Internship Details:
+Opted Organization Name: Eduskills Foundation
+Address: 
+Contact Person Name: Designation: Contact Number: Email ID: 
+Internship Start Date:
+Internship End Date:
+Mode of Internship: ☐ Physical ☐ Virtual
+Work Assigned: 
+Approval by Department:
+Letter/Mail from the Organization, if any submitted/received (Yes/No) Did the coordinator cross-check with the Organization (Yes/No)? 
+Genuineness of the Organization verified by (Name and signature): Remarks (if any): 
+Recommended by HoD ☐ Yes ☐ No
+Faculty Mentor Assigned: Dr./Mr./Ms.: 
+Approval Date:
+Signature of Coordinator Signature of HoD Seal
+Approved by Dean Placements ☐ Yes ☐ No
+Signature of Dean Placements Seal
+INDEX
+Internship Certificate
+Certificate ID: 4764a141c1adff224a59
+Student ID: STU686eaa62372bc1752083042
+Internship Grade: O (Outstanding)
+ABSTRACT
+This report presents the learning outcomes and project work undertaken as part of the "Advanced Robotics Using AI and IoT" Virtual Internship, offered by EduSkills Foundation in collaboration with AICTE (All India Council for Technical Education) under the National Internship Portal, Ministry of Education. The 8-week internship, delivered through an online learning management platform, was designed to equip students with foundational and applied knowledge of robotics, Artificial Intelligence (AI), and the Internet of Things (IoT), aimed at building intelligent, connected, and autonomous robotic systems.
+The program combined theoretical concepts with hands-on practical implementation using tools such as Arduino Uno, Raspberry Pi, Python, embedded C, sensors (ultrasonic, PIR, DHT11), actuators (DC motors, servos), the Robot Operating System (ROS)/Gazebo simulation environment, and the MQTT protocol for IoT communication. Key learning areas included robotics fundamentals and terminology, basic electronics, microcontroller programming, sensor and actuator interfacing, robot kinematics and motion control, AI and machine learning fundamentals for perception, IoT communication protocols, data acquisition and processing, robot simulation, and ethical and safety considerations in robotics.
+The internship culminated in a capstone project titled "Smart IoT-Enabled Security & Navigation Robot", an integrated hardware–software system comprising two cooperating modules — a Navigation System (Arduino-based obstacle avoidance and path following using ultrasonic sensing) and a Perception & Alerting System (Raspberry Pi-based motion detection, image capture, and MQTT-based cloud alerting). The project demonstrates the practical integration of embedded electronics, AI-assisted perception, and IoT connectivity to solve a real-world security and monitoring problem, bridging the gap between academic knowledge and industry-oriented robotics engineering practice. The program concluded with a certification upon successful completion of all module assessments, validating both the learning progress and the technical competency achieved during the internship.
+INTRODUCTION TO COMPANY / INSTITUTION
+EduSkills Foundation is a non-profit organization committed to bridging the gap between academia and industry by developing a workforce prepared for Industry 4.0. Established with the vision of transforming India's educational ecosystem, EduSkills empowers students and educators with access to world-class curricula, hands-on learning, and industry-aligned skill development programs.
+Headquartered in Bhubaneswar, with regional offices in New Delhi, Hyderabad, and Pune, EduSkills partners with leading global technology companies, academic institutions, and government bodies to foster employability, innovation, and entrepreneurship among youth. Its initiatives focus on enhancing education, employment, and entrepreneurship opportunities, contributing to the nation's digital transformation.
+The EduSkills Virtual Internship Program, conducted in collaboration with AICTE and supported by the National Internship Portal under the Ministry of Education, provides an online platform where students engage in project-based learning and gain real-world, industry-relevant experience through guided modules.
+The "Advanced Robotics Using AI and IoT" internship under EduSkills offers a comprehensive, beginner-friendly learning experience covering robotics fundamentals, basic electronics, microcontroller programming (Arduino/Raspberry Pi), sensors and actuators, robot kinematics, Artificial Intelligence, Machine Learning for perception, the Internet of Things, data acquisition, robot simulation, and ethical/safety considerations — culminating in an integrated, project-based capstone. By successfully completing the internship, students acquire technical proficiency and professional exposure while earning a recognized certification validating their readiness for roles in robotics, embedded systems, and intelligent automation.
+For a student of the Department of Artificial Intelligence and Data Science, this internship offered a unique opportunity to apply AI and data-handling concepts learned in the classroom to a tangible, physical system. Modules such as Machine Learning Fundamentals for Perception and Data Acquisition & Processing for Robotics directly reinforced core AI&DS coursework — including data preprocessing, pattern recognition, and model-driven decision-making — while extending it into the domain of embedded, real-time, sensor-driven systems. This cross-disciplinary exposure to robotics, AI, and IoT complements the department's curriculum by demonstrating how data-science techniques operate at the edge, on resource-constrained hardware, and in direct interaction with the physical world.
+Program Structure and Delivery Method
+The “Advanced Robotics Using AI and IoT” course is delivered as a beginner-friendly, self-paced online program on the EduSkills learning management platform, requiring no prior background in robotics, AI, or IoT. Each of the 15 modules combines a short conceptual lesson, a hands-on practical exercise, real-world case studies drawn from industry, and a graded assessment, allowing learners to progress module-by-module while tracking completion percentage in real time. This structured, assessment-driven format ensured steady, verifiable progress across the eight-week duration and culminated in the integrated capstone project described in this report.
+LEARNING OBJECTIVES / INTERNSHIP OBJECTIVES
+Internships provide college students the opportunity to gain real-world, hands-on experience in a specialized field before entering the workforce, complementing classroom learning with practical application.
+This internship allowed me to build upon my existing academic knowledge of Artificial Intelligence and Data Science while developing new, industry-relevant skills in embedded systems, robotics, and IoT.
+Robotics, AI, and IoT internships span a wide range of career fields including manufacturing, automotive, healthcare, agriculture, defence, and smart-home automation.
+The internship was structured to allow scientific, hands-on experimentation with embedded hardware, sensors, actuators, and cloud connectivity, mirroring first-hand industry practice.
+Completing this internship strengthened my resume with a certified, project-based credential, and highlighted skills such as embedded programming, sensor interfacing, AI-assisted perception, and IoT communication that distinguish me from other applicants.
+Specific objectives included: understanding robotics fundamentals and terminology; interfacing sensors and actuators with microcontrollers; programming robotic behaviour in Python/C++; applying AI/ML concepts to robotic perception; implementing IoT communication using MQTT; and designing, integrating, and documenting a complete robotic system.
+As an Artificial Intelligence and Data Science student, an important objective was to understand how data acquired from physical sensors is cleaned, filtered, and used to drive AI-based decisions in real time — bridging the gap between theoretical data-science coursework and applied, embedded AI.
+A further objective was to strengthen practical project-management and technical-documentation skills, including system-architecture design, interface specification, structured testing, and professional report writing, through the preparation of this internship documentation.
+The rapid convergence of Artificial Intelligence and the Internet of Things is transforming robotics from isolated, pre-programmed automation into intelligent, connected systems that can sense, learn, and adapt - understanding this convergence, and its impact on career opportunities across manufacturing, healthcare, agriculture, and smart-home automation, was a core motivation for undertaking this internship.
+A final objective was to build confidence working across the complete robotics stack - from low-level circuit design and embedded firmware to sensor-driven AI decision-making and cloud connectivity - rather than specialising narrowly in a single layer of the system.
+WEEKLY OVERVIEW OF INTERNSHIP ACTIVITIES
+Summary of the Weekly Learning Progression: Across the eight weeks, the training progressed deliberately from foundational concepts to integrated, project-based work. The first three weeks built core hardware and programming literacy (electronics, microcontrollers, sensors, actuators, and Python/C++ fundamentals); weeks four and five introduced robot motion control and the artificial-intelligence and machine-learning concepts needed for perception; weeks six and seven covered IoT communication, data processing, simulation, and safety practices; and the final week consolidated everything into the design, implementation, and assessment of the capstone project. This structured, week-by-week progression ensured that every new topic built directly on skills acquired earlier, which made the final integration of the Navigation and Perception & Alerting modules considerably more manageable than attempting them without the preceding foundation.
+INTRODUCTION TO INTERNSHIP TOPIC
+Robotics is the interdisciplinary branch of engineering and computer science that deals with the design, construction, operation, and use of robots — machines capable of carrying out a series of actions autonomously or semi-autonomously. Modern robotics integrates mechanical design, electronics, embedded programming, Artificial Intelligence, and networked connectivity to create systems that can sense their environment, make decisions, and act upon the physical world.
+Historical and Conceptual Background of Robotics
+The Module 1 material covered in the EduSkills course traced robotics back to its origins: the word “robot” itself comes from the Czech word “robota” (forced labour), coined by playwright Karel Čapek in 1920, though the underlying idea of artificial mechanical helpers goes back to ancient automatons and Leonardo da Vinci’s sketches of a mechanical knight. Modern robotics, however, really began in 1954, when George Devol patented the Unimate, the first industrial robotic arm, which was installed on a General Motors assembly line in 1961 to lift and stack hot metal die-castings. Learning this history was useful context for the internship: it framed today’s AI- and IoT-connected robots such as the capstone project’s Navigation and Perception & Alerting modules as the latest step in a decades-long progression — from purely mechanical, pre-programmed “pick-and-place” arms, through microprocessor-controlled robots in the 1970s–80s, to today’s sensor-rich, network-connected, AI-assisted systems used in manufacturing, healthcare, agriculture, and space and underwater exploration.
+A robotic system is typically built from four core building blocks: sensors (to perceive the environment), actuators (to produce motion or physical action), a controller/microcontroller (to process information and make decisions), and a power system. When these components are combined with Artificial Intelligence and Internet of Things (IoT) connectivity, robots evolve from simple pre-programmed machines into intelligent, connected systems capable of learning, adapting, and communicating with remote users and cloud platforms.
+Role of AI in Robotics
+Artificial Intelligence enables robots to move beyond fixed, rule-based behaviour toward perception, reasoning, and adaptive decision-making. In this internship, AI concepts were applied to robotic perception — for example, using Machine Learning fundamentals to help a robot interpret sensor data (such as distinguishing a genuine obstacle from sensor noise, or recognising a motion event as significant) and to make basic autonomous decisions such as path re-routing or triggering an alert.
+Role of IoT in Robotics
+The Internet of Things extends a robot's capability beyond its own local sensors and actuators by connecting it to the internet and cloud services. Using lightweight, publish/subscribe protocols such as MQTT, a robot can transmit sensor readings, status updates, and alerts to a remote broker, which in turn can notify a user's dashboard or mobile device in real time. This internship focused on MQTT as the primary IoT communication protocol, owing to its low overhead, reliability, and suitability for resource-constrained embedded devices such as the Arduino and Raspberry Pi.
+Why an Integrated AI + IoT + Robotics Approach Matters
+None of these three domains delivers a complete solution in isolation: mechanical and electronic hardware alone can only react to pre-programmed rules, Artificial Intelligence without sensors and actuators has no way to perceive or act on the physical world, and IoT connectivity without an intelligent controller is simply a data pipe with nothing meaningful to send. The capstone project in this internship was deliberately structured to combine all three: the Arduino handled deterministic, low-latency navigation and safety logic; the Raspberry Pi added AI-assisted perception; and MQTT-based IoT connectivity tied both modules together and exposed the robot's status to a remote dashboard. This integrated approach reflects how production robotics systems are actually engineered in industry, which made the internship’s project-based format particularly valuable preparation for real-world embedded and AI system design.
+Key Tools and Platforms Used
+Arduino Uno — microcontroller platform for low-level sensor/actuator control and real-time navigation logic.
+Raspberry Pi — single-board computer used for perception, image capture, AI inference, and MQTT-based IoT communication.
+Python & Embedded C/C++ (Arduino sketches) — programming languages used across the internship.
+Sensors — HC-SR04 ultrasonic sensor, PIR motion sensor, DHT11 temperature/humidity sensor, camera module.
+Actuators — DC motors with L298N motor driver, servo motors.
+Gazebo / ROS — robot simulation and virtual testing environment.
+MQTT (Mosquitto broker) — IoT communication protocol for publish/subscribe messaging.
+DESCRIPTION OF INTERNSHIP EXPERIENCE
+The 8-week virtual internship conducted by EduSkills Foundation, in collaboration with AICTE, provided a comprehensive learning and project-based experience in Robotics, Artificial Intelligence, and IoT. The program was divided into two key phases: Foundational Learning (Weeks 1–6) and Capstone Project Implementation (Weeks 7–8).
+Phase 1: Foundational Learning (Weeks 1–6)
+The first six weeks were dedicated to building a strong foundation across mechanical, electronic, and computational aspects of robotics. Each module combined conceptual lessons, practical hands-on implementation exercises, and real-world case studies, reinforced by quizzes and module assessments.
+Key Learning Areas:
+Robotics Fundamentals: robot definitions, history, classifications (industrial, mobile, humanoid, service robots), and core terminology such as autonomy, teleoperation, and degrees of freedom.
+Electronics & Microcontrollers: circuit fundamentals, battery/power management, and Arduino/Raspberry Pi Pico programming using pinMode(), digitalWrite(), analogRead(), and interrupt-driven logic.
+Sensors & Actuators: interfacing ultrasonic, PIR, and analog sensors; driving DC motors and servos using H-bridge motor drivers.
+Programming & Kinematics: Python/C++ fundamentals, differential-drive kinematics, obstacle avoidance and path-following algorithms.
+AI & Machine Learning: applying AI concepts and basic ML techniques to robotic perception and decision-making.
+IoT & Data Processing: MQTT publish/subscribe communication, sensor data acquisition, noise filtering, and visualization.
+Simulation & Safety: Gazebo/ROS-based robot simulation, and ethical/safety considerations in robotics deployment.
+Phase 2: Capstone Project Implementation (Weeks 7–8)
+The second phase focused on applying all previously learned concepts to a real-world integrated robotics project titled "Smart IoT-Enabled Security & Navigation Robot", modelled on the course's smart-home-security robot exemplar. The project combines an Arduino-based navigation subsystem with a Raspberry Pi-based perception and IoT-alerting subsystem.
+Key Contributions and Activities:
+System Design & Planning: defined project scope, selected components, and designed a two-module system architecture (Navigation System and Perception & Alerting System) with clearly specified module interfaces.
+Navigation Module (Arduino): implemented ultrasonic-sensor-based obstacle detection and motor control logic to enable basic autonomous path following and obstacle avoidance.
+Perception & Alerting Module (Raspberry Pi): implemented PIR-based motion detection, camera-triggered image capture, and MQTT-based publishing of alerts and image data to a cloud broker.
+Integration: established a serial/I2C command interface between the Arduino and Raspberry Pi so that the Perception module can issue "start patrol" / "stop patrol" commands to the Navigation module.
+Testing & Debugging: performed functional, integration, and performance testing of sensor readings, motor responses, and MQTT message delivery; debugged using the Arduino Serial Monitor and Raspberry Pi logs.
+Documentation: prepared system architecture diagrams, module interface definitions, and this consolidated internship report.
+This hands-on development phase provided practical exposure to full end-to-end robotics workflows — spanning embedded programming, sensor/actuator integration, AI-assisted perception, IoT connectivity, and system-level testing — closely simulating real-world robotics engineering environments. By the end of the 8 weeks, the project successfully demonstrated a functioning, modular, AI-and-IoT-enabled robotic system, and I was awarded an Outstanding (O) grade for the internship.
+Key Skills Acquired
+Embedded programming in Arduino C/C++ and Python for real-time sensor/actuator control.
+Circuit design and hardware interfacing using breadboards, motor drivers, and common robotics sensors.
+Applying AI and Machine Learning fundamentals to sensor-driven perception problems.
+Data acquisition, filtering, and processing techniques for noisy, real-world sensor data.
+IoT communication design using the MQTT publish/subscribe protocol and the Mosquitto broker.
+Robot simulation and virtual testing using Gazebo and ROS.
+System-level thinking: decomposing a problem into modular, independently testable components.
+Structured testing, debugging, and technical documentation of an integrated hardware–software system.
+Exposure to Industry 4.0 principles and the professional workflow of translating a specification into a working, testable embedded system, from component selection through integration testing.
+Collaboration-ready technical communication: writing clear module interface definitions and architecture diagrams that another developer, or module, could pick up and integrate without additional clarification.
+MODULES
+The course content was delivered through 15 structured modules, each comprising a conceptual lesson, a practical implementation exercise, real-world examples, and an assessment. These modules are summarised below, followed by a detailed description of the two integration modules developed for the capstone project.
+Course Modules (1–15)
+Detailed Module Descriptions
+Each module below combines a conceptual lesson, a hands-on practical implementation exercise, real-world case studies, and a graded assessment, forming a complete, self-paced learning unit on the EduSkills platform.
+Module 1: Introduction to Robotics Concepts & Terminology
+This foundational module introduced the definition, history, and classification of robots (industrial, mobile, humanoid, and service robots), along with core terminology such as degrees of freedom, autonomy, and teleoperation. The practical exercise involved identifying real-world robotic components and mapping them to their functional roles, followed by case studies of robots used across manufacturing, healthcare, and logistics. This grounding in classification and terminology later helped me communicate design decisions clearly during the capstone project's system-architecture discussions.
+Module 2: Basic Electronics for Robotics
+This module covered the fundamentals of voltage, current, resistance, and Ohm's Law, along with power dissipation calculations for selecting appropriately rated resistors. In the hands-on lab, I used a breadboard and jumper wires to assemble a basic LED circuit with a current-limiting resistor, building the foundational electronics skills required for all subsequent hardware modules. I also learned to read component datasheets and select resistor tolerances appropriate for prototype-grade circuits, a habit that reduced wiring errors later in the project.
+Module 3: Introduction to Microcontrollers (Arduino / Raspberry Pi Pico)
+This module introduced microcontroller architecture and the role of Arduino and Raspberry Pi Pico boards in robotics. I set up the Arduino IDE, learned core functions such as pinMode(), digitalWrite(), and analogRead(), and wrote and uploaded my first "Blink" sketch to control an onboard LED — the foundational exercise for all later embedded-programming work. This module also introduced serial-communication debugging using the Arduino IDE's Serial Monitor, a tool I relied on throughout the rest of the internship.
+Module 4: Sensors in Robotics
+This module explored the principles and applications of common robotic sensors, including ultrasonic distance sensors, PIR motion sensors, and analog sensors. The practical component involved interfacing the HC-SR04 ultrasonic sensor with the Arduino to measure real-time distance readings, directly feeding into the Navigation module of the capstone project. I also compared sensor accuracy under different lighting and surface conditions, which helped me understand the practical limitations of low-cost sensing hardware.
+Module 5: Actuators in Robotics
+This module covered DC motors, servo motors, and H-bridge motor drivers (L298N), explaining how electrical signals are converted into physical motion. In the hands-on lab, I wired and controlled a DC motor's speed and direction using PWM signals through the motor driver, forming the locomotion backbone of the capstone robot. Understanding H-bridge polarity switching was essential for implementing smooth forward, reverse, and turning manoeuvres in the final robot chassis.
+Module 6: Introduction to Programming for Robotics
+This module built Python and C++ programming fundamentals — variables, control flow, functions, and loops — and demonstrated how this logic translates into robot behaviour. The practical exercise focused on writing structured, reusable code to control sensor-driven decisions, a skill directly applied in the navigation and perception logic of the final project. Practising modular function design also made later debugging and code reuse across the two capstone modules significantly easier.
+Module 7: Basic Robot Kinematics and Motion Control
+This module introduced differential-drive kinematics, explaining how independently controlled wheel speeds produce turning and forward motion. The practical exercise involved implementing simple path-following and obstacle-avoidance algorithms, which were later refined and integrated into the capstone project's Navigation module. Calculating turning radius from differential wheel speeds gave me a much clearer intuition for how software commands translate into physical robot movement.
+Module 8: Introduction to Artificial Intelligence (AI) for Robotics
+This module introduced core AI concepts — perception, reasoning, and decision-making — and how they apply to robotic systems. Through guided exercises, I explored how a robot can use sensor input to make simple autonomous decisions, forming the conceptual basis for the Perception & Alerting module of the capstone project. This module also introduced the distinction between rule-based logic and learned models, a distinction that shaped how I approached the Perception module's design.
+Module 9: Machine Learning Fundamentals for Perception
+This module covered the basics of supervised learning and how machine learning models can be applied to interpret sensor data — for example, distinguishing genuine motion events from noise. The practical exercise involved applying basic ML concepts to classify sensor readings, directly relevant to the AI&DS discipline and to the capstone project's perception logic. I also learned to evaluate a simple classifier using accuracy and false-positive rate, metrics that later informed how I tuned the motion-alert threshold.
+Module 10: Introduction to the Internet of Things (IoT) for Robotics
+This module introduced IoT architecture and the MQTT publish/subscribe protocol, explaining how lightweight messaging enables robots to communicate with cloud services and remote users. The hands-on lab involved setting up a Mosquitto broker and publishing/subscribing to topics — the exact mechanism used for alert delivery in the capstone project. I also compared MQTT with HTTP polling for this use case and confirmed that a lightweight publish/subscribe model was better suited to battery-powered, intermittently connected robots.
+Module 11: Data Acquisition and Processing for Robotics
+This module focused on acquiring, logging, and filtering sensor data to remove noise before it is used for decision-making — a core data-science skill directly relevant to my department. The practical exercise involved processing raw sensor readings and visualizing them to identify trends and anomalies. I also practised basic outlier detection on noisy ultrasonic readings, which improved the reliability of the obstacle-avoidance logic used in the capstone build.
+Module 12: Robot Simulation and Virtual Environments
+This module introduced the Gazebo simulator and the Robot Operating System (ROS), allowing robot behaviour to be tested virtually before physical deployment. In the hands-on lab, I installed and ran a Gazebo simulation to validate navigation logic in a safe, virtual environment prior to (conceptual) hardware deployment. Working in simulation first also helped me catch several logic errors early, before they could have caused hardware damage during physical testing.
+Module 13: Ethical Considerations and Safety in Robotics
+This module addressed responsible AI, data privacy, and safety protocols for robots operating around people. Through case studies, I examined real-world incidents involving robotic systems and derived safety guidelines that were later applied to the fail-safe design of the capstone project's Navigation module. This module also prompted me to add a manual override and a clearly documented shutdown procedure to the capstone robot's design.
+Module 14: Project-Based Learning for Integrated Robotics
+This module guided the ideation, scope definition, and system-architecture design of the capstone project, "Smart IoT-Enabled Security & Navigation Robot" Documenting these interfaces early made the subsequent integration of the Navigation and Perception modules considerably smoother.. I defined the two-module architecture (Navigation and Perception & Alerting), selected appropriate hardware and communication protocols, and documented the module interfaces before implementation.
+Module 15: Troubleshooting & Final Assessment
+This final module covered a systematic approach to debugging hardware/software integration issues, using tools such as the Arduino Serial Monitor and MQTT Explorer. I applied these techniques to resolve sensor-timing and connectivity issues in the capstone project before completing the Final Assessment and receiving certification. This module reinforced the value of systematic, one-variable-at-a-time debugging over guesswork when resolving intermittent hardware faults.
+Capstone Project Modules — "Smart IoT-Enabled Security & Navigation Robot"
+Module 1: Navigation System
+Technologies Used: Arduino Uno, HC-SR04 ultrasonic sensor, L298N motor driver, DC motors.
+Key Features:
+Real-time distance measurement using the ultrasonic sensor for obstacle detection.
+Basic path-following and obstacle-avoidance logic implemented in Arduino embedded C.
+Receives "start patrol" / "stop patrol" commands from the Perception module; sends motor speed/direction commands; shares distance readings across the module interface.
+This module forms the mobility backbone of the robot, ensuring safe, autonomous movement within its operating environment.
+Module 2: Perception & Alerting System
+Technologies Used: Raspberry Pi, PIR motion sensor, Pi Camera module, Python, Paho-MQTT client library, Mosquitto broker.
+Key Features:
+Continuously monitors the PIR sensor for motion events.
+Triggers the camera to capture an image when motion is detected.
+Publishes alert messages and image data to an MQTT broker, which forwards notifications to a cloud dashboard / user's mobile device.
+Sends start/stop commands to the Navigation module to coordinate patrol behaviour.
+This module gives the robot its "awareness", converting raw sensor events into actionable, remotely accessible alerts — a key demonstration of AI-and-IoT-enabled robotics.
+Design Rationale
+The two-module split was a deliberate design decision: separating time-critical, safety-relevant obstacle avoidance (Navigation, on the Arduino) from the computationally heavier, less time-critical perception and cloud communication (Perception & Alerting, on the Raspberry Pi) meant that a delay or failure in the AI/IoT layer would never compromise the robot's basic ability to avoid collisions. This separation of concerns, learned through the internship's system-architecture module, mirrors how safety-critical and intelligence layers are decoupled in real industrial and consumer robotic systems.
+ANALYSIS
+This section presents a SWOT analysis (Strengths, Weaknesses, Opportunities, and Threats) of the capstone project "Smart IoT-Enabled Security & Navigation Robot", evaluating its design, implementation, and problem-solving capability in the context of AI-and-IoT-enabled robotics.
+Strengths
+The capstone project and the internship's delivery model showed several clear strengths, summarised below.
+Comprehensive core functionality: the system successfully integrates obstacle-avoidance navigation, motion-triggered perception, image capture, and cloud alerting in a single cooperating pair of modules.
+Modular, well-defined architecture: the Navigation and Perception & Alerting modules have clearly specified responsibilities and interfaces, making the system easier to test, maintain, and extend.
+Reliable real-time communication: MQTT's lightweight publish/subscribe model ensures low-latency alert delivery even on constrained hardware.
+Hands-on hardware–software integration: the project demonstrates genuine embedded-systems skills spanning microcontroller programming, sensor/actuator interfacing, and cloud connectivity.
+Scalable design: additional sensors or a third module (e.g., a mapping or voice-alert module) could be added without redesigning the existing modules.
+Weaknesses
+At the same time, working within a simulated/virtual internship format and a compressed eight-week timeline introduced some practical limitations, outlined below.
+Limited onboard AI: perception logic relies on threshold-based sensor triggers rather than a trained ML model, restricting the system's ability to distinguish between genuine threats and false positives (e.g., pets, shadows).
+No persistent data storage: sensor logs and captured images are not stored in a structured database, limiting historical analysis.
+Basic user interface: alerts are delivered as raw MQTT messages; a polished mobile/web dashboard was outside the scope of the internship timeline.
+Power dependency: continuous operation of the Raspberry Pi and motors requires a stable power supply, which was not optimized for battery efficiency.
+Opportunities
+The current design also opens up several natural directions for future enhancement, listed here.
+Integrating a trained Machine Learning model (e.g., a lightweight CNN) for image-based intruder/object classification to reduce false alerts.
+Adding cloud-based data logging and a dashboard (e.g., using Node-RED or a simple web app) for historical analytics and remote configuration.
+Extending the Navigation module with SLAM (Simultaneous Localization and Mapping) using the Gazebo/ROS skills gained during the internship.
+Adapting the platform for other use cases such as warehouse inventory patrol, elderly-care monitoring, or agricultural field surveillance.
+Threats
+Finally, a few external and environmental factors could affect the reliability of a deployed system of this kind.
+Rapid evolution of AI/IoT tools and libraries may require frequent updates to maintain compatibility.
+Security risks such as unauthorized access to the MQTT broker or unencrypted data transmission, if deployed beyond a controlled lab environment.
+Sensor accuracy and reliability can be affected by environmental factors (lighting, temperature, electrical noise), which would need further calibration for real-world deployment.
+Competition from mature, commercially available smart-security products offering more advanced features.
+Dependency on a stable Wi-Fi/network connection for MQTT-based alerting; a prolonged outage would suspend remote notifications even though local obstacle avoidance would continue safely.
+As a virtual internship, the project was validated through simulation and desk-level component testing rather than a fully assembled physical prototype, so some real-world mechanical and electrical tolerances remain unverified.
+Overall, the SWOT analysis indicates that the capstone project achieved its core internship objective of demonstrating a working, modular, AI-and-IoT-enabled robotic system, while also surfacing a clear, prioritised roadmap - trained perception, persistent data logging, secured communication, and physical validation - for evolving the prototype into a deployment-ready product.
+SOFTWARE & HARDWARE REQUIREMENTS SPECIFICATION
+The development of the capstone project required a combination of hardware components and software tools to support embedded, AI, and IoT development. The tables below summarise the environment, technologies, and key system requirements used during the internship.
+Hardware Requirements
+Software Requirements
+Functional Requirements
+Non-Functional Requirements
+TECHNOLOGIES
+The capstone project was developed using a modern, industry-relevant robotics technology stack integrating embedded hardware, AI-assisted perception, and IoT connectivity layers, as summarised below.
+System Architecture Overview
+Technologies Summary Table
+SYSTEM ARCHITECTURE
+The capstone project follows a layered architecture in which sensing, control, actuation, and IoT connectivity are cleanly separated, allowing the Navigation and Perception & Alerting modules to be developed, tested, and debugged independently before integration.
+Fig. 1 — System Architecture: AI & IoT Enabled Robotic Platform
+System Flow Description
+The ultrasonic sensor continuously feeds distance data to the Arduino, which runs the navigation control loop.
+The PIR sensor, camera, and DHT11 sensor feed the Raspberry Pi, which performs perception processing and AI-assisted analysis.
+The Arduino and Raspberry Pi communicate over a serial/I2C link to exchange patrol start/stop commands and status.
+The Raspberry Pi publishes alert messages and image data to an MQTT broker (Mosquitto), which forwards them to a cloud dashboard or the user's mobile device.
+This layered, modular design ensures that a failure or delay in one layer (e.g., the cloud connection) does not stop the core navigation safety logic from functioning.
+Each layer exposes a narrow, well-defined interface to its neighbours (sensor readings, serial commands, MQTT topics), so a component can be swapped or upgraded - e.g. replacing the ultrasonic sensor with a LiDAR module - without redesigning the rest of the system.
+The layered view also doubled as the internship's debugging map: whenever an issue appeared, it could be isolated to a single layer (sensing, control, actuation, or cloud) before being traced further, which considerably shortened debugging time during integration.
+CODING
+The implementation phase of the "Smart IoT-Enabled Security & Navigation Robot" project involved writing and integrating code across the Navigation (Arduino) and Perception & Alerting (Raspberry Pi) modules, following the modular architecture described above. Representative code snippets from each stage of the internship and the final project are provided below.
+1. Microcontroller Basics — Digital Output (Module 3)
+The first hands-on exercise involved the classic "Blink" sketch, introducing pinMode() and digitalWrite(), the foundation for all subsequent Arduino control code.
+// the setup function runs once when you press reset or power the board
+void setup() {
+ pinMode(LED_BUILTIN, OUTPUT); // initialize digital pin as an output
+}
+
+// the loop function runs over and over again forever
+void loop() {
+ digitalWrite(LED_BUILTIN, HIGH); // turn the LED on
+ delay(1000); // wait for a second
+ digitalWrite(LED_BUILTIN, LOW); // turn the LED off
+ delay(1000); // wait for a second
+}
+2. Navigation Module — Ultrasonic Obstacle Avoidance (Arduino, C++)
+File: navigation_module.ino — reads distance from the HC-SR04 sensor and drives the DC motors via the L298N driver to avoid obstacles.
+#define TRIG_PIN 9
+#define ECHO_PIN 10
+#define MOTOR_IN1 5
+#define MOTOR_IN2 6
+#define SAFE_DISTANCE_CM 20
+
+bool patrolActive = false;
+
+void setup() {
+ pinMode(TRIG_PIN, OUTPUT);
+ pinMode(ECHO_PIN, INPUT);
+ pinMode(MOTOR_IN1, OUTPUT);
+ pinMode(MOTOR_IN2, OUTPUT);
+ Serial.begin(9600); // command link to Raspberry Pi
+}
+
+long readDistanceCM() {
+ digitalWrite(TRIG_PIN, LOW); delayMicroseconds(2);
+ digitalWrite(TRIG_PIN, HIGH); delayMicroseconds(10);
+ digitalWrite(TRIG_PIN, LOW);
+ long duration = pulseIn(ECHO_PIN, HIGH);
+ return duration * 0.034 / 2; // convert to centimetres
+}
+
+void loop() {
+ if (Serial.available()) {
+ String cmd = Serial.readStringUntil('\n');
+ if (cmd == "START_PATROL") patrolActive = true;
+ if (cmd == "STOP_PATROL") patrolActive = false;
+ }
+ if (patrolActive) {
+ long distance = readDistanceCM();
+ if (distance < SAFE_DISTANCE_CM) {
+ stopMotors(); turnRight(300); // obstacle avoidance manoeuvre
+ } else {
+ moveForward();
+ }
+ } else {
+ stopMotors();
+ }
+}
+3. Perception & Alerting Module — Motion Detection & MQTT Publish (Raspberry Pi, Python)
+File: perception_module.py — monitors the PIR sensor, captures an image on motion detection, and publishes an alert to the MQTT broker.
+import RPi.GPIO as GPIO
+import time
+from picamera import PiCamera
+import paho.mqtt.client as mqtt
+
+PIR_PIN = 17
+BROKER = "broker.local"
+TOPIC_ALERT = "security/robot/alert"
+
+GPIO.setmode(GPIO.BCM)
+GPIO.setup(PIR_PIN, GPIO.IN)
+camera = PiCamera()
+client = mqtt.Client()
+client.connect(BROKER, 1883, 60)
+
+def publish_alert(image_path):
+ client.publish(TOPIC_ALERT, f"Motion detected! Image: {image_path}")
+ print("Alert published to MQTT broker.")
+
+try:
+ client.publish("security/robot/command", "START_PATROL")
+ while True:
+ if GPIO.input(PIR_PIN):
+ filename = f"/home/pi/captures/motion_{int(time.time())}.jpg"
+ camera.capture(filename)
+ publish_alert(filename)
+ time.sleep(5) # debounce interval
+ time.sleep(0.2)
+except KeyboardInterrupt:
+ client.publish("security/robot/command", "STOP_PATROL")
+ GPIO.cleanup()
+4. Module Interface — MQTT Topic Design
+The two modules were designed to remain loosely coupled, communicating only through a small, well-defined set of MQTT topics and serial commands:
+security/robot/command -> "START_PATROL" | "STOP_PATROL" (Perception -> Navigation)
+security/robot/alert -> "Motion detected! Image: <path>" (Perception -> Broker -> Dashboard)
+security/robot/status -> "OBSTACLE_AVOIDED" | "PATROL_OK" (Navigation -> Broker -> Dashboard)
+5. Dashboard Alert Payload — JSON Message Format
+To keep the remote dashboard decoupled from the internal sensor logic, every MQTT alert message was serialised as a compact JSON object before being published to the security/robot/alert topic. This gave the dashboard a stable, self-describing message format regardless of future changes to the underlying sensor code:
+{
+ "device_id": "robot-01",
+ "event": "motion_detected",
+ "timestamp": "2026-07-14T10:22:41Z",
+ "image_path": "/home/pi/captures/motion_1752488561.jpg",
+ "confidence": "high",
+ "navigation_state": "PATROL_OK",
+ "battery_level_pct": 78
+}
+This structure meant the dashboard only needed to parse a single, versioned JSON schema, while the Navigation and Perception & Alerting modules on the robot side remained free to evolve their internal logic independently.
+DIAGRAMS
+The following diagram illustrates how the two capstone-project modules interact through the shared sensor/command interface and the MQTT communication layer.
+Fig. 2 — Capstone Project: Module Interaction Diagram
+As no physical hardware photographs were captured during the virtual internship (all modules were developed, simulated, and validated through the EduSkills online lab environment and Gazebo/ROS simulation), the system and module diagrams above are used in place of hardware screenshots to document the final architecture.
+Data Flow Summary
+The table below traces a single security event end-to-end through the four architectural layers shown in Fig. 1, illustrating how a raw sensor reading becomes a user-facing alert.
+CERTIFICATE COMPLETION
+TEST CASES
+Testing ensured that each module of the "Smart IoT-Enabled Security & Navigation Robot" functioned correctly, met requirements, and performed reliably. Both functional and integration testing were carried out to validate the flow between the Navigation module (Arduino), the Perception & Alerting module (Raspberry Pi), and the MQTT broker. Manual testing was performed using the Arduino Serial Monitor, MQTT Explorer, and direct hardware/simulation observation.
+Performance Test Cases
+Sample Negative Test Cases
+The testing phase helped identify and resolve issues related to sensor noise, serial communication timing, and MQTT reconnection handling before final submission of the project.
+Together, the functional, performance, and negative test suites gave reasonable confidence that the system behaves correctly under normal conditions and degrades safely, rather than catastrophically, under abnormal ones - an important property for any robot that shares physical space with people.
+MODULE-WISE ASSESSMENT
+This section assesses the implementation and effectiveness of each major module developed for the capstone project during the internship.
+Navigation Module
+Assessment: Successfully implemented real-time obstacle detection and avoidance using the HC-SR04 ultrasonic sensor and L298N motor driver. The module reliably responds to serial commands from the Perception module.
+Areas for Improvement: Path-planning is currently reactive (obstacle avoidance only); adding a mapping/SLAM capability would enable more efficient, planned navigation.
+Perception & Alerting Module
+Assessment: Effectively detects motion via the PIR sensor, captures images, and publishes MQTT alerts with minimal latency.
+Areas for Improvement: Currently uses threshold-based detection; integrating a trained ML model would reduce false positives from non-threat motion (e.g., pets, curtains).
+IoT Communication Layer
+Assessment: MQTT publish/subscribe messaging was implemented correctly using the Mosquitto broker and Paho-MQTT client, delivering alerts reliably to the subscriber.
+Areas for Improvement: Topic-level authentication and TLS encryption were not implemented, which would be necessary for a production deployment.
+Simulation & Testing
+Assessment: Gazebo/ROS simulation was used effectively to validate navigation logic prior to (conceptual) hardware deployment, reducing debugging time.
+Areas for Improvement: Simulation covered kinematics only; sensor-noise modelling in simulation could be improved for more realistic testing.
+Documentation & Project Management
+Assessment: Module interfaces, system architecture, and test cases were documented clearly, supporting smooth integration between the two modules.
+Areas for Improvement: A formal version-controlled repository (Git/GitHub) with commit-level documentation would further strengthen project traceability.
+Overall Learning Outcomes
+Beyond the specific technical deliverables of the capstone project, this internship strengthened several transferable skills that will be valuable throughout my academic and professional career as an Artificial Intelligence and Data Science student. On the technical side, I gained hands-on experience with embedded C/C++ and Python programming, sensor and actuator interfacing, MQTT-based IoT messaging, and the basics of applying Machine Learning to real-time sensor data. On the systems-thinking side, I learned to decompose a complex problem into loosely coupled modules (Navigation and Perception & Alerting), define clear interfaces between them, and debug integration issues methodically rather than by trial and error. I also developed stronger project-documentation and technical-writing habits, including maintaining structured records of requirements, test cases, and module-wise assessments throughout the eight weeks. Finally, working within a virtual internship format required disciplined self-paced learning and time management, skills that will continue to serve me in future academic projects, further internships, and eventual industry roles in robotics, embedded systems, or applied AI.
+CONCLUSION
+This 8 Weeks (June 2026 – August 2026) internship, "Advanced Robotics Using AI and IoT", conducted by EduSkills Foundation (AICTE Virtual Internship Program), provided a valuable opportunity to build and apply skills across mechanical, electronic, and computational aspects of robotics. The program successfully achieved its primary objective: developing a solid foundation in robotics fundamentals, electronics, microcontroller programming, AI-assisted perception, and IoT communication, and applying this foundation to design, implement, and document a functional, integrated robotic system.
+The capstone project, "Smart IoT-Enabled Security & Navigation Robot", effectively integrates a Navigation module (Arduino-based obstacle avoidance) with a Perception & Alerting module (Raspberry Pi-based motion detection, image capture, and MQTT-based cloud alerting). The system showcases a robust combination of embedded C/C++, Python, sensor and actuator interfacing, and IoT protocols, closely simulating real-world robotics engineering practice.
+The development process, guided by a modular, iterative approach, resulted in a scalable and maintainable robotic system. While limitations such as the absence of a trained AI perception model and a polished user dashboard remain, the project lays a strong foundation for a more advanced, fully autonomous, AI-and-IoT-enabled robotic platform.
+Overall, this internship represents a significant practical accomplishment, demonstrating the potential of integrated Robotics, AI, and IoT technologies in solving real-world problems. The experience gained in embedded systems, sensor/actuator integration, AI-assisted perception, IoT communication, and system documentation has been invaluable in preparing me, Kambhampati Sruthi, for future academic and professional pursuits in robotics and intelligent automation.
+Future Scope
+Building on this foundation, the project could next be extended by training a lightweight machine-learning model for image-based intruder classification, adding a persistent database and web dashboard for historical analytics, securing the MQTT channel with TLS and topic-level authentication, and assembling a physical hardware prototype to validate the design against real-world sensor noise and mechanical tolerances - the natural next steps toward a deployable, fully autonomous AI-and-IoT-enabled robotic platform.
+BIBLIOGRAPHY
+1) Arduino Documentation. Arduino LLC. Accessed 2026. https://docs.arduino.cc/
+2) Raspberry Pi Documentation. Raspberry Pi Foundation. Accessed 2026. https://www.raspberrypi.com/documentation/
+3) MQTT Specification & Documentation. OASIS / MQTT.org. Accessed 2026. https://mqtt.org/
+4) Eclipse Mosquitto Documentation. Eclipse Foundation. Accessed 2026. https://mosquitto.org/documentation/
+5) ROS (Robot Operating System) Documentation. Open Robotics. Accessed 2026. https://docs.ros.org/
+6) Gazebo Simulator Documentation. Open Robotics. Accessed 2026. https://gazebosim.org/docs
+7) OpenCV Documentation. OpenCV.org. Accessed 2026. https://docs.opencv.org/
+8) Python Software Foundation. Python 3 Documentation. Accessed 2026. https://docs.python.org/3/
+9) Paho-MQTT Python Client Documentation. Eclipse Foundation. Accessed 2026. https://eclipse.dev/paho/
+10) AICTE — All India Council for Technical Education. Accessed 2026. https://www.aicte-india.org/
+11) EduSkills Foundation — Virtual Internship Program. Accessed 2026. https://eduskillsfoundation.org/
+12) Git Documentation. Git Community. Accessed 2026. https://git-scm.com/doc
+13) TensorFlow Lite Documentation. Google. Accessed 2026. https://www.tensorflow.org/lite
+14) Raspberry Pi Camera Module Documentation. Raspberry Pi Foundation. Accessed 2026. https://www.raspberrypi.com/documentation/accessories/camera.html
+15) NIST IR 8228 — Considerations for Managing IoT Cybersecurity and Privacy Risks. National Institute of Standards and Technology. Accessed 2026. https://csrc.nist.gov/
+16) IEEE Robotics and Automation Society — Ethically Aligned Design Resources. IEEE. Accessed 2026. https://www.ieee.org/
+13) Craig, J. J. Introduction to Robotics: Mechanics and Control. Pearson Education.
+14) Russell, S., & Norvig, P. Artificial Intelligence: A Modern Approach. Pearson Education.
+15) HC-SR04 Ultrasonic Ranging Module and PIR Motion Sensor - manufacturer reference datasheets. Accessed 2026.
+16) National Internship Portal, Ministry of Education, Government of India. Accessed 2026. https://internship.aicte-india.org/
+S.No | Contents | Page No.
+1 | Internship Certificate (EduSkills / AICTE) | 1
+2 | Abstract | 2
+3 | Introduction to Company / Institution | 3
+4 | Learning Objectives / Internship Objectives | 4
+5 | Weekly Overview of Internship Activities | 5-7
+6 | Introduction to Internship Topic | 8-9
+7 | Description of Internship Experience | 10-11
+8 | Modules | 12-15
+9 | Analysis (SWOT) | 16-17
+10 | Software & Hardware Requirements Specification | 18-19
+11 | Technologies | 20
+12 | System Architecture & Coding | 21-24
+13 | Diagrams/Screenshots | 25
+14 | Certificate Completion | 26
+15 | Test Cases | 27
+16 | Module-wise Assessment | 28-29
+17 | Conclusion | 30
+18 | Bibilography | 31
+Week | Date | Day | Name of Topic / Module Completed
+I | 01-06-2026 | Monday | Module 1: Introduction to Robotics Concepts & Terminology — definitions, history, building blocks of a robot.
+ | 02-06-2026 | Tuesday | Module 1 (Practical): Identifying robot types and real-world robotic components.
+ | 03-06-2026 | Wednesday | Module 1 (Real-World Examples): Robots across industries; Module 1 Assessment.
+ | 04-06-2026 | Thursday | Module 2: Basic Electronics for Robotics — voltage, current, resistance, circuit fundamentals.
+ | 05-06-2026 | Friday | Module 2 (Practical): Building your first circuits on a breadboard.
+ | 06-06-2026 | Saturday | Module 2 (Real-World Examples): Powering and protecting robotic components; Module 2 Assessment.
+ | 07-06-2026 | Sunday | Review & Practice Exercises on Robotics Fundamentals and Electronics.
+Week | Date | Day | Name of Topic / Module Completed
+II | 08-06-2026 | Monday | Module 3: Introduction to Microcontrollers (Arduino / Raspberry Pi Pico) — architecture and role in robotics.
+ | 09-06-2026 | Tuesday | Module 3 (Practical): Arduino IDE setup and pin configuration — pinMode(), digitalWrite(), analogRead().
+ | 10-06-2026 | Wednesday | Module 3 (Practical): Writing and uploading the first "Blink" sketch.
+ | 11-06-2026 | Thursday | Module 3 (Real-World Examples): Real-world microcontroller applications.
+ | 12-06-2026 | Friday | Module 3 Assessment: Microcontroller fundamentals quiz and practical evaluation.
+ | 13-06-2026 | Saturday | Hands-on Practice: Interfacing a push-button and LED with the Arduino.
+ | 14-06-2026 | Sunday | Review & Practice Exercises on Microcontroller Programming.
+Week | Date | Day | Name of Topic / Module Completed
+III | 15-06-2026 | Monday | Module 4: Sensors in Robotics — principles and applications of ultrasonic, PIR and analog sensors.
+ | 16-06-2026 | Tuesday | Module 4 (Practical): Interfacing the HC-SR04 ultrasonic sensor and PIR motion sensor.
+ | 17-06-2026 | Wednesday | Module 4 (Real-World Examples): Sensors in robotics; Module 4 Assessment.
+ | 18-06-2026 | Thursday | Module 5: Actuators in Robotics — motors and servos, H-bridge motor drivers.
+ | 19-06-2026 | Friday | Module 5 (Practical): Controlling DC motors and servo motors using the L298N driver.
+ | 20-06-2026 | Saturday | Module 5 (Real-World Examples): Actuators in robotics; Module 5 Assessment.
+ | 21-06-2026 | Sunday | Review & Practice on Sensors and Actuators.
+Week | Date | Day | Name of Topic / Module Completed
+IV | 22-06-2026 | Monday | Module 6: Introduction to Programming for Robotics (Python/C++ basics) — control flow and functions.
+ | 23-06-2026 | Tuesday | Module 6 (Practical): Bringing robotics to life with code — translating logic into robot behaviour.
+ | 24-06-2026 | Wednesday | Module 6 (Real-World Examples): Robotics programming in industry; Module 6 Assessment.
+ | 25-06-2026 | Thursday | Module 7: Basic Robot Kinematics and Motion Control — differential drive concepts.
+ | 26-06-2026 | Friday | Module 7 (Practical): Implementing path-following and obstacle-avoidance logic.
+ | 27-06-2026 | Saturday | Module 7 (Real-World Examples): Kinematics and motion control; Module 7 Assessment.
+ | 28-06-2026 | Sunday | Review & Hands-on Practice on Programming and Kinematics.
+Week | Date | Day | Name of Topic / Module Completed
+V | 29-06-2026 | Monday | Module 8: Introduction to Artificial Intelligence (AI) for Robotics — AI fundamentals and perception.
+ | 30-06-2026 | Tuesday | Module 8 (Practical): AI fundamentals for robotics — hands-on exercises.
+ | 01-07-2026 | Wednesday | Module 8 (Real-World Examples): AI in robotics; Module 8 Assessment.
+ | 02-07-2026 | Thursday | Module 9: Machine Learning Fundamentals for Perception — supervised learning basics.
+ | 03-07-2026 | Friday | Module 9 (Practical): Applying ML fundamentals to sensor-based perception.
+ | 04-07-2026 | Saturday | Module 9 (Real-World Examples): ML in robotics, AI and IoT; Module 9 Assessment.
+ | 05-07-2026 | Sunday | Review & Practice on AI and Machine Learning Concepts.
+Week | Date | Day | Name of Topic / Module Completed
+VI | 06-07-2026 | Monday | Module 10: Introduction to the Internet of Things (IoT) for Robotics — IoT architecture and MQTT.
+ | 07-07-2026 | Tuesday | Module 10 (Practical): Publish/Subscribe communication model — hands-on with MQTT and Mosquitto.
+ | 08-07-2026 | Wednesday | Module 10 (Real-World Examples): IoT in action; Module 10 Assessment.
+ | 09-07-2026 | Thursday | Module 11: Data Acquisition and Processing for Robotics — sensor data logging.
+ | 10-07-2026 | Friday | Module 11 (Practical): Sensor data acquisition, noise filtering, and processing.
+ | 11-07-2026 | Saturday | Module 11 (Real-World Examples): Data acquisition and processing; Module 11 Assessment.
+ | 12-07-2026 | Sunday | Review & Practice on IoT and Data Processing.
+Week | Date | Day | Name of Topic / Module Completed
+VII | 13-07-2026 | Monday | Module 12: Robot Simulation and Virtual Environments — introduction to Gazebo/ROS.
+ | 14-07-2026 | Tuesday | Module 12 (Practical): Installing and running a Gazebo simulation.
+ | 15-07-2026 | Wednesday | Module 12 (Real-World Examples): Robot simulation and virtual environments; Module 12 Assessment.
+ | 16-07-2026 | Thursday | Module 13: Ethical Considerations and Safety in Robotics — safety protocols, responsible AI.
+ | 17-07-2026 | Friday | Module 13 (Practical): Designing a basic safety protocol for a robotic system.
+ | 18-07-2026 | Saturday | Module 13 (Real-World Examples): Ethics and safety case studies; Module 13 Assessment.
+ | 19-07-2026 | Sunday | Review & Practice on Simulation, Ethics and Safety.
+Week | Date | Day | Name of Topic / Module Completed
+VIII | 20-07-2026 | Monday | Module 14: Project-Based Learning — ideation, scope definition for "Smart IoT-Enabled Security & Navigation Robot".
+ | 21-07-2026 | Tuesday | Module 14 (Practical): Designing the capstone system architecture — Navigation & Perception modules.
+ | 22-07-2026 | Wednesday | Module 14 (Real-World Examples): Modular design and component integration; Module 14 Assessment.
+ | 23-07-2026 | Thursday | Module 15: Troubleshooting — systematic approach to debugging robotic systems.
+ | 24-07-2026 | Friday | Module 15 (Practical): Debugging hardware/software integration issues in the capstone project.
+ | 25-07-2026 | Saturday | Module 15 (Real-World Examples): Final project testing and documentation preparation.
+ | 26-07-2026 | Sunday | Final Assessment and Internship Completion — Certification.
+# | Module Title | Key Focus
+1 | Introduction to Robotics Concepts & Terminology | Robot definitions, history, types, applications, terminology
+2 | Basic Electronics for Robotics | Circuits, components, batteries, power management
+3 | Introduction to Microcontrollers | Arduino/Raspberry Pi Pico architecture & programming basics
+4 | Sensors in Robotics | Principles and interfacing of ultrasonic, PIR, analog sensors
+5 | Actuators in Robotics | DC motors, servos, H-bridge motor drivers
+6 | Programming for Robotics | Python/C++ fundamentals for robot control
+7 | Robot Kinematics & Motion Control | Differential drive, path following, obstacle avoidance
+8 | Introduction to AI for Robotics | AI fundamentals, perception, decision-making
+9 | Machine Learning for Perception | ML basics applied to sensor-driven perception
+10 | Introduction to IoT for Robotics | IoT architecture, MQTT, publish/subscribe model
+11 | Data Acquisition & Processing | Sensor logging, noise filtering, data visualization
+12 | Robot Simulation & Virtual Environments | Gazebo/ROS installation and simulation
+13 | Ethical Considerations & Safety | Safety protocols, responsible AI, data privacy
+14 | Project-Based Learning (Integrated Robotics) | Capstone ideation, architecture, modular design
+15 | Troubleshooting & Final Assessment | Systematic debugging, final testing, certification
+Category | Component | Purpose / Description
+Microcontroller | Arduino Uno | Real-time control of navigation sensors and motors
+Single-Board Computer | Raspberry Pi (Model 3B+/4) | Perception, AI inference, and MQTT-based IoT communication
+Sensors | HC-SR04 Ultrasonic Sensor | Distance measurement for obstacle avoidance
+Sensors | PIR Motion Sensor | Detecting movement for the Perception module
+Sensors | DHT11 Sensor / Pi Camera | Environmental monitoring and image capture
+Actuators | DC Motors + L298N Motor Driver | Robot locomotion
+Power | Li-ion Battery Pack / 5V–12V Power Supply | Powering the Arduino, Raspberry Pi, and motors
+Chassis | 2WD/4WD Robot Chassis Kit | Mechanical platform for mounting components
+Category | Software / Tool | Purpose / Description
+Operating System | Windows 10/11 or Raspberry Pi OS (Linux) | Development, build, and testing environment
+Programming Languages | Embedded C/C++ (Arduino), Python 3 | Firmware and application-level programming
+IDE / Code Editor | Arduino IDE, Thonny / VS Code | Writing, compiling, and debugging code
+AI / ML Libraries | OpenCV, scikit-learn (concept level) | Perception and basic machine-learning experiments
+IoT Protocol & Broker | MQTT, Mosquitto, Paho-MQTT (Python) | Publish/subscribe communication for alerts
+Simulation | Gazebo, ROS (Robot Operating System) | Virtual testing of robot behaviour before deployment
+Version Control | Git & GitHub | Source-code versioning and backup
+Testing Tools | Arduino Serial Monitor, MQTT Explorer | Debugging and verifying sensor/communication data
+S.No | Functional Requirement | Description
+1 | Obstacle Detection | The system shall continuously measure distance using the ultrasonic sensor and detect obstacles within a defined threshold.
+2 | Autonomous Navigation | The system shall autonomously steer the robot to avoid detected obstacles and continue path following.
+3 | Motion Detection | The system shall detect motion events using the PIR sensor in real time.
+4 | Image Capture | Upon motion detection, the system shall trigger the camera to capture an image.
+5 | Alert Publishing | The system shall publish an alert message and image data to the MQTT broker.
+6 | Remote Notification | The MQTT broker shall forward alerts to a subscribed dashboard/user device.
+7 | Module Command Interface | The Perception module shall be able to send start/stop patrol commands to the Navigation module.
+8 | Data Logging | The system shall log key sensor readings for review and debugging.
+S.No | Non-Functional Requirement | Description
+1 | Performance | The navigation loop shall respond to obstacles within acceptable real-time limits (sub-second reaction).
+2 | Reliability | The system shall maintain stable sensor readings and communication under normal operating conditions.
+3 | Scalability | The modular architecture shall support the addition of new sensors or modules without major redesign.
+4 | Usability | Alerts and status messages shall be clear and easily interpretable by the end user.
+5 | Maintainability | Code shall be organized module-wise (Navigation / Perception) to simplify debugging and future upgrades.
+6 | Portability | Software shall run on standard Arduino and Raspberry Pi hardware without proprietary dependencies.
+7 | Security | MQTT communication shall be restricted to authorized topics/broker credentials in a production deployment.
+Layer | Technologies Used | Description
+Sensing Layer | HC-SR04 Ultrasonic, PIR Sensor, Pi Camera, DHT11 | Captures environmental data — distance, motion, images, temperature/humidity.
+Control Layer (Navigation) | Arduino Uno, Embedded C/C++ | Processes sensor input and drives motors for obstacle avoidance and path following.
+Perception / AI Layer | Raspberry Pi, Python, OpenCV concepts | Processes motion events, captures and analyses images.
+IoT / Communication Layer | MQTT, Mosquitto Broker, Paho-MQTT | Publishes alerts and data to a broker for remote consumption.
+Cloud / User Layer | MQTT Subscriber Dashboard / Mobile Notification | Displays alerts and status to the end user in real time.
+Simulation & Testing | Gazebo, ROS, Arduino Serial Monitor | Validates robot behaviour virtually and debugs hardware integration.
+Technology / Tool | Category | Purpose in Project
+Arduino Uno (Embedded C++) | Microcontroller | Executes navigation and obstacle-avoidance logic in real time.
+Raspberry Pi (Python) | Single-board computer | Handles perception, image capture, and IoT messaging.
+HC-SR04 Ultrasonic Sensor | Sensor | Measures distance to obstacles for the Navigation module.
+PIR Motion Sensor | Sensor | Detects movement for the Perception module.
+L298N Motor Driver + DC Motors | Actuator | Provides locomotion for the robot chassis.
+MQTT / Mosquitto | IoT Protocol / Broker | Publish/subscribe communication of alerts and data.
+OpenCV (concept-level) | AI/Perception Library | Basic image handling for the Perception module.
+Gazebo / ROS | Simulation | Virtual testing of robot kinematics and behaviour.
+Git & GitHub | Version Control | Tracks project versions and source-code history.
+Stage | What Happens
+1. Sensing | PIR sensor detects motion; HC-SR04 continuously reports distance to the Arduino.
+2. Local Processing | Arduino evaluates distance against the safe-distance threshold; Raspberry Pi triggers the camera on motion.
+3. Perception | Raspberry Pi captures and timestamps an image, forming the alert payload.
+4. Communication | Perception module publishes the alert and image reference to the MQTT broker over the security/robot/alert topic.
+5. Notification | The broker forwards the message to the cloud dashboard / subscribed mobile device, completing the loop from sensor to user.
+Test ID | Module | Test Scenario | Expected Output | Status
+TC-01 | Navigation | Obstacle within 20 cm detected | Robot stops and turns away from obstacle | Pass
+TC-02 | Navigation | Path is clear (>20 cm) | Robot moves forward continuously | Pass
+TC-03 | Navigation | Receive START_PATROL command | Navigation loop becomes active | Pass
+TC-04 | Navigation | Receive STOP_PATROL command | Motors stop immediately | Pass
+TC-05 | Perception | PIR sensor detects motion | Camera captures an image within 1s | Pass
+TC-06 | Perception | No motion detected | System remains idle, no false alerts | Pass
+TC-07 | IoT / MQTT | Alert published after motion event | Broker receives message on security/robot/alert | Pass
+TC-08 | IoT / MQTT | Dashboard subscribed to alert topic | Notification displayed to user in real time | Pass
+TC-09 | Integration | Perception sends START_PATROL over serial link | Navigation module begins patrol within 1s | Pass
+TC-10 | Security | Broker connection lost | Navigation continues local obstacle avoidance safely | Pass
+TC-11 | Navigation | Two obstacles detected in quick succession | Robot re-evaluates path and avoids both safely | Pass
+TC-12 | Perception | Low-light condition during motion event | Image still captured; alert flagged with low-confidence tag | Pass
+TC-13 | IoT / MQTT | Duplicate alert published within 1s window | Duplicate suppressed by debounce logic on broker side | Pass
+Test Case ID | Scenario | Expected Result | Actual Result | Status
+TC-PT-01 | Obstacle detection response time | React within 0.5s | Avg. 0.35s | Pass
+TC-PT-02 | Motion-to-image-capture latency | Capture within 1s | Avg. 0.8s | Pass
+TC-PT-03 | MQTT alert delivery latency | Delivered within 2s | Avg. 1.4s | Pass
+TC-PT-04 | Continuous patrol run (30 minutes) | No navigation failure | Stable, no failures | Pass
+TC-PT-05 | Simulated high sensor-noise environment | Maintain accuracy within tolerance | Minor drift beyond 400cm range | Partial
+Scenario | Expected Result
+Ultrasonic sensor disconnected | Navigation defaults to STOP state (fail-safe)
+Invalid/garbled serial command received | Command ignored; last valid state retained
+MQTT broker unreachable | Perception module retries connection; Navigation unaffected
+Camera hardware fault during capture | Alert published with error flag instead of image
+Power supply voltage drops below threshold | System logs low-voltage warning and halts motors safely
+Wi-Fi/network briefly unavailable on Raspberry Pi | Perception module buffers alert locally and republishes once reconnected
+GPS/Wi-Fi module briefly loses signal during patrol | System buffers the alert locally and republishes automatically once connectivity is restored
+Low battery voltage on the motor supply | Navigation module reduces speed and raises a low-power flag instead of stalling unexpectedly
