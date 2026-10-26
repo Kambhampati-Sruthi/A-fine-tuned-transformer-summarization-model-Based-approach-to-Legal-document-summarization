@@ -9,3 +9,4 @@ numpy==1.26.4
 pypdf
 python-docx
 safetensors
+rank-bm25==0.2.2
