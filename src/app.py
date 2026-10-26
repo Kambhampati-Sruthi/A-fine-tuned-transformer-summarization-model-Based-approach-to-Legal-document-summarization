@@ -6,7 +6,7 @@ import time
 import html
 import traceback
 from pathlib import Path
-
+from transformers import LEDTokenizerFast, LEDForConditionalGeneration
 import pandas as pd
 import streamlit as st
 import torch
@@ -324,7 +324,8 @@ def simple_review_flags(source, summary):
 
 @st.cache_resource(show_spinner=False)
 def load_legal_model(checkpoint_path):
-    tokenizer = LEDTokenizer.from_pretrained(checkpoint_path)
+    #tokenizer = LEDTokenizer.from_pretrained(checkpoint_path)
+    tokenizer = LEDTokenizerFast.from_pretrained(checkpoint_path)
     model = LEDForConditionalGeneration.from_pretrained(checkpoint_path)
     model.to(DEVICE)
     model.eval()
